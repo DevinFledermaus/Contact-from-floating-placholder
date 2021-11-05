@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: gray;
+}
+
+#hidden {
+    display: none;
+}
+
+.contact-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: gray;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.contact-form-container .user-box {
+    position: relative;
+}
+
+.contact-form-container .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.contact-form-container .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.1em;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.contact-form-container .user-box input:focus ~ label,
+.contact-form-container .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: turquoise;
+    font-size: 0.9em;
+}
+
+.contact-form-container form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: turquoise;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.contact-form-container a:hover {
+    background: turquoise;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px turquoise
+                0 0 25px turquoise
+                0 0 50px turquoise
+                0 0 100px turquoise;
+}
+
+.contact-form-container form #mini-a {
+    color: red;
+}
+
+/* Intial Button Style */
+.btn button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 10px 20px;
+    color: turquoise;
+    background: none;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.btn button:hover {
+    background: turquoise;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px turquoise
+                0 0 25px turquoise
+                0 0 50px turquoise
+                0 0 100px turquoise;
+    cursor: pointer;
+}
+
+.btn button span {
+    position: absolute;
+    display: block;
+}
+
+.btn button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+}
+  
+.btn button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+  
+@keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+}
+  
+.btn button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  

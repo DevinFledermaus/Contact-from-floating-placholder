@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Floatin Placeholder Contact Form</title>
+</head>
+<body>
+    <div class="btn" id="button">
+        <button onclick="activate()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Login
+        </button>
+    </div>
+    <section class="contact-form-container" id="hidden">
+        <h2>Login</h2>
+        <form>
+            <div class="user-box">
+                <input
+                    type="text"
+                    name="uname"
+                    required=""
+                />
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input
+                    type="password"
+                    name="pword"
+                    required=""
+                />
+                <label>Password</label>
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+            <br>
+            <a id="mini-a" href="">Not Yet Registered</a>
+        </form>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
