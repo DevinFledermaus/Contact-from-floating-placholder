@@ -64,10 +64,10 @@ body {
     font-size: 0.9em;
 }
 
-.contact-form-container form a {
+.contact-form-container form .sub-btn {
     position: relative;
-    display: inline-block;
-    padding: 10px 20px;
+    display: flex;
+    padding: 10px 10px;
     color: turquoise;
     font-size: 1.1em;
     text-decoration: none;
@@ -76,9 +76,10 @@ body {
     transition: .5s;
     margin-top: 40px;
     letter-spacing: 4px;
+    justify-content: center;
 }
 
-.contact-form-container a:hover {
+.contact-form-container .sub-btn:hover {
     background: turquoise;
     color: black;
     border-radius: 5px;
@@ -89,7 +90,14 @@ body {
 }
 
 .contact-form-container form #mini-a {
-    color: red;
+    color: rgb(22, 22, 22);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form-container form #mini-a:hover {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: turquoise;
 }
 
 /* Intial Button Style */
@@ -102,6 +110,7 @@ body {
     padding: 10px 20px;
     color: turquoise;
     background: none;
+    border: 1px solid gray;
     font-size: 1.1em;
     text-decoration: none;
     text-transform: uppercase;
