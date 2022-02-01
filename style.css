@@ -19,9 +19,11 @@ body {
     top: 50%;
     left: 50%;
     width: 400px;
-    padding: 40px;
+    padding: 80px 40px;
     transform: translate(-50%, -50%);
     background: gray;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 
 .contact-form-container h2 {
